@@ -1,0 +1,64 @@
+.parametro{
+    margin: 1vh;
+    text-align: center;
+    height: 40vh;
+    min-width: 16vw;
+    padding: 1vh;
+    background: white;
+    border-radius: 2vh;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.valor{
+    color: rgb(88, 88, 88);
+    width: 100%;
+}
+
+.valor span{
+    color: black;
+}
+
+.containerAnemometro {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.velocimetroAnemometro{
+    background-image: url("../../../assets/images/anemometro.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 90%;
+    height: 70%;
+}
+
+.speedometerAnemometro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1%;
+    width: 1%;
+    transform: translateY(-1800%);
+}
+
+#agujaAnemometro{
+    transform: rotate(-120deg);
+    height: 3500%;
+    transform-origin: bottom center;
+}
+
+#Anemometro p {
+    text-align: center;
+    font-size: 5vh;
+}
+
+#valorAnemometro{
+    width: 100%;
+}
