@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles/Anemometro.css";
 import { useFetch } from "../../hooks/useFetch";
+import cargando from "../../assets/images/cargando.gif";
 
-
+ 
 export const Anemometro = () => {
 
   const { data, isLoading, errors } = useFetch(
@@ -12,7 +13,7 @@ export const Anemometro = () => {
   if (isLoading) {
     return (
       <div id="Anemometro" className="parametro">
-        <p>Cargando...</p>
+        <img src={cargando} alt="" style={{ width: "90%" }}></img>
       </div>
     )
   } else if (errors) {
@@ -24,6 +25,8 @@ export const Anemometro = () => {
   }
   console.log(data[0].Anemometro);
 
+  const rotationAnemometro = (data[0].Anemometro) * 4 - 120;
+
   return (
     <div id="Anemometro" className="parametro">
       <h2 className="AnemometroTitulo">Anemómetro</h2>
@@ -34,6 +37,7 @@ export const Anemometro = () => {
               src="https://imagizer.imageshack.com/v2/240x334q70/c/923/8a3v89.png"
               alt=""
               id="agujaAnemometro"
+              style={{ transform: `rotate(${rotationAnemometro}deg)` }}
             ></img>
           </div>
         </div>

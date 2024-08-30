@@ -49,7 +49,6 @@
 }
 
 #agujaAnemometro{
-    transform: rotate(-120deg);
     height: 3500%;
     transform-origin: bottom center;
 }
