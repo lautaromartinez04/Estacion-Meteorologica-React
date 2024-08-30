@@ -57,6 +57,13 @@
 #Anemometro p {
     text-align: center;
     font-size: 5vh;
+    text-decoration: none;
+}
+
+.AnemometroTitulo{
+    text-align: center;
+    font-size: 5vh;
+    text-decoration: none;
 }
 
 #valorAnemometro{

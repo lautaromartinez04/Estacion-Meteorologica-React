@@ -5,6 +5,11 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.Link{
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width: 768px) {
     #home{
         grid-template-columns: 1fr;
