@@ -13,7 +13,7 @@ export const Anemometro = () => {
   if (isLoading) {
     return (
       <div id="Anemometro" className="parametro">
-        <img src={cargando} alt="" style={{ width: "90%" }}></img>
+        <p>Cargando...</p>
       </div>
     )
   } else if (errors) {

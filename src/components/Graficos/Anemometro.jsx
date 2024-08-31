@@ -117,7 +117,7 @@ export const Anemometro = () => {
 
           <div className="centradorgr">
             <div className="grafico">
-              <select
+              <select className='selector'
                 name="hs"
                 id="hs"
                 value={selectedOption}
